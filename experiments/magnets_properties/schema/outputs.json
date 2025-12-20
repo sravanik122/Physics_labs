@@ -1,0 +1,49 @@
+{
+  "final_state": {
+    "attraction_force": "number (N)",
+    "field_intensity": "number (T)",
+    "attraction_type": "string",
+    "effective_range": "number (mm)",
+    "temperature_loss_factor": "number"
+  },
+
+  "timeline": {
+    "t": "number[] (s)",
+    "attraction_force": "number[] (N)",
+    "field_intensity": "number[] (T)"
+  },
+
+  "visual": {
+    "field_lines": [
+      {
+        "x": "number",
+        "y": "number",
+        "strength": "number"
+      }
+    ],
+
+    "force_vectors": [
+      {
+        "x": "number",
+        "y": "number",
+        "magnitude": "number",
+        "direction": "number"
+      }
+    ],
+
+    "pole_positions": [
+      {
+        "pole": "string",
+        "x": "number",
+        "y": "number"
+      }
+    ],
+
+    "animation": {
+      "field_line_speed": "number",
+      "force_arrow_scale": "number",
+      "show_repulsion": "boolean",
+      "recommended_fps": "number"
+    }
+  }
+}
