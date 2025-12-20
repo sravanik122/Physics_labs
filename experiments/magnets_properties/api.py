@@ -8,19 +8,16 @@ from .logic.types import ExperimentInputs, SimulationResult, TrainingRow
 from .logic import sim as sim_engine
 from .logic import ai as ai_engine
 
-
 app = FastAPI(
-    title="Magnetic Properties Virtual Lab API",
+    title="Properties of Magnets and Magnetic Materials",
     version="1.0.0",
     description="Simulation and AI API for magnetism experiments",
 )
-
 
 class TrainRequest(BaseModel):
     training_inputs: List[ExperimentInputs]
     input_keys: List[str]
     output_keys: List[str]
-
 
 class PredictRequest(BaseModel):
     inputs: ExperimentInputs
@@ -28,11 +25,9 @@ class PredictRequest(BaseModel):
     total_time: float
     sampling_interval: float
 
-
 @app.post("/simulate", response_model=SimulationResult)
 def simulate(inputs: ExperimentInputs):
     return sim_engine.simulate(inputs)
-
 
 @app.post("/train")
 def train_model(request: TrainRequest):
@@ -50,7 +45,6 @@ def train_model(request: TrainRequest):
         "status": "training_completed",
         "history": history,
     }
-
 
 @app.post("/predict", response_model=SimulationResult)
 def predict(request: PredictRequest):
