@@ -210,7 +210,7 @@ def generate_teacher_dataset(
 
         dataset.append(
             TrainingRow(
-                inputs=inp.dict(exclude={"seed"}),
+                inputs=inp.dict(exclude={"seed"}, exclude_none=True),
                 outputs={
                     "attraction_force": result.final_state.attraction_force,
                     "field_intensity": result.final_state.field_intensity,
