@@ -1,0 +1,22 @@
+{
+  "epochs": 50,
+  "batch_size": 32,
+  "validation_split": 0.2,
+
+  "optimizer": {
+    "type": "adam",
+    "learning_rate": 0.003
+  },
+
+  "model_layers": [128, 64, 32],
+
+  "loss": "mse",
+  "metrics": ["mae"],
+
+  "regularization": {
+    "dropout": 0.2,
+    "l2": 0.0005
+  },
+
+  "tensorboard_logdir": "./logs/magnets_properties"
+}
