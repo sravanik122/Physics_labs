@@ -1,0 +1,60 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 0.05,
+  "default_total_time": 10,
+  "noise_sigma": 0.01,
+
+  "default_input_ranges": {
+    "displacement": { "min": -10, "max": 10 },
+    "speed": { "min": 0, "max": 20 },
+    "radius_of_path": { "min": 0.5, "max": 10 },
+    "angular_velocity": { "min": 0.1, "max": 10 },
+    "amplitude": { "min": 0.5, "max": 10 },
+    "frequency": { "min": 0.1, "max": 5 },
+    "medium_resistance": { "min": 0.0, "max": 1.0 }
+  },
+
+  "constants": {
+    "pi": 3.141592653589793,
+
+    "motion_types": {
+      "linear": {
+        "dimension": 1
+      },
+      "circular": {
+        "dimension": 2
+      },
+      "periodic": {
+        "dimension": 1
+      }
+    },
+
+    "damping": {
+      "linear_damping_factor": 0.1,
+      "oscillation_damping_factor": 0.15
+    },
+
+    "gravity": {
+      "enabled": false,
+      "g": 9.81
+    }
+  },
+
+  "visual": {
+    "max_trail_points": 300,
+    "trajectory_resolution": 200,
+
+    "animation": {
+      "show_path": true,
+      "show_velocity_vector": true,
+      "trail_fade": true,
+      "recommended_fps": 60
+    },
+
+    "scaling": {
+      "position_scale": 1.0,
+      "velocity_scale": 0.5
+    }
+  }
+}
