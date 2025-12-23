@@ -1,0 +1,47 @@
+{
+  "final_state": {
+    "final_position": "number | object",
+    "final_velocity": "number | object",
+    "total_distance": "number (m)",
+    "average_speed": "number (m/s)",
+    "motion_type": "string"
+  },
+
+  "timeline": {
+    "t": "number[] (s)",
+
+    "position": "number[] | object[]",
+    "velocity": "number[] | object[]",
+    "acceleration": "number[] | object[]",
+
+    "x": "number[]",
+    "y": "number[]",
+
+    "speed": "number[] (m/s)"
+  },
+
+  "visual": {
+    "trajectory": {
+      "x": "number[]",
+      "y": "number[]"
+    },
+
+    "velocity_vectors": [
+      {
+        "x": "number",
+        "y": "number",
+        "magnitude": "number",
+        "direction": "number"
+      }
+    ],
+
+    "path_type": "linear | circular | periodic",
+
+    "animation": {
+      "show_path": "boolean",
+      "show_velocity_vector": "boolean",
+      "trail_length": "number",
+      "recommended_fps": "number"
+    }
+  }
+}
