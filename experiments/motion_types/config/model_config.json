@@ -1,0 +1,30 @@
+{
+  "experiment_version": "1.0.0",
+
+  "epochs": 35,
+  "batch_size": 16,
+  "validation_split": 0.2,
+
+  "optimizer": {
+    "type": "adam",
+    "learning_rate": 0.001
+  },
+
+  "model_layers": [64, 48, 32],
+
+  "regularization": {
+    "l2": 0.0005,
+    "dropout": 0.1
+  },
+
+  "loss": "mse",
+  "metrics": ["mae"],
+
+  "prediction_targets": {
+    "linear": ["speed"],
+    "circular": ["radius_of_path", "angular_velocity"],
+    "periodic": ["amplitude", "frequency"]
+  },
+
+  "tensorboard_logdir": "./logs/motion_types/model_training"
+}
