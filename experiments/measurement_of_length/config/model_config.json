@@ -1,0 +1,21 @@
+{
+  "model_type": "regression",
+  "epochs": 30,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "validation_split": 0.2,
+
+  "optimizer": {
+    "name": "adam",
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "epsilon": 1e-07
+  },
+
+  "model_layers": [64, 32, 16],
+
+  "loss": "mse",
+  "metrics": ["mae"],
+
+  "tensorboard_logdir": "./logs/measurement_of_length"
+}
