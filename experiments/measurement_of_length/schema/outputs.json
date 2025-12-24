@@ -1,0 +1,28 @@
+{
+  "final_state": {
+    "observed_length": "number",
+    "corrected_length": "number",
+    "total_measurement_error": "number",
+    "final_length": "number",
+    "measurement_accuracy": "number"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "observed_length": "number[]",
+    "corrected_length": "number[]",
+    "error_contribution": {
+      "zero_error": "number[]",
+      "alignment_error": "number[]",
+      "parallax_error": "number[]",
+      "thermal_error": "number[]"
+    }
+  },
+
+  "visual": {
+    "tool_position_offset": "number",
+    "parallax_angle_deg": "number",
+    "error_highlight_level": "number",
+    "show_error_overlay": "boolean"
+  }
+}
