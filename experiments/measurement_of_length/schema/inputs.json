@@ -1,0 +1,87 @@
+{
+  "object_length": {
+    "type": "number",
+    "units": "cm",
+    "min": 0.1,
+    "max": 100.0,
+    "default": 10.0,
+    "description": "Actual length of the object to be measured."
+  },
+
+  "measuring_tool_type": {
+    "type": "enum",
+    "units": null,
+    "options": ["ruler", "vernier_caliper", "screw_gauge"],
+    "default": "ruler",
+    "description": "Type of measuring instrument used for the experiment."
+  },
+
+  "least_count": {
+    "type": "number",
+    "units": "cm",
+    "min": 0.001,
+    "max": 0.1,
+    "default": 0.1,
+    "description": "Smallest measurement value the selected tool can resolve."
+  },
+
+  "zero_error": {
+    "type": "number",
+    "units": "cm",
+    "min": -0.5,
+    "max": 0.5,
+    "default": 0.0,
+    "description": "Zero error of the measuring instrument."
+  },
+
+  "alignment_error": {
+    "type": "number",
+    "units": "cm",
+    "min": 0.0,
+    "max": 0.2,
+    "default": 0.0,
+    "description": "Error due to improper alignment of the object."
+  },
+
+  "parallax_error": {
+    "type": "number",
+    "units": "cm",
+    "min": 0.0,
+    "max": 0.2,
+    "default": 0.0,
+    "description": "Error caused by incorrect viewing angle."
+  },
+
+  "unit_system": {
+    "type": "enum",
+    "units": null,
+    "options": ["mm", "cm", "inch"],
+    "default": "cm",
+    "description": "Unit system used for measurement display."
+  },
+
+  "temperature": {
+    "type": "number",
+    "units": "°C",
+    "min": 0,
+    "max": 60,
+    "default": 20,
+    "description": "Ambient temperature affecting material expansion."
+  },
+
+  "surface_roughness": {
+    "type": "enum",
+    "units": null,
+    "options": ["smooth", "medium", "rough"],
+    "default": "smooth",
+    "description": "Surface quality of the object being measured."
+  },
+
+  "user_precision": {
+    "type": "enum",
+    "units": null,
+    "options": ["low", "medium", "high"],
+    "default": "medium",
+    "description": "Skill level of the person performing the measurement."
+  }
+}
