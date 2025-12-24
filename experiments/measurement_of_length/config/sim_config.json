@@ -1,0 +1,71 @@
+{
+  "experiment_name": "Measurement of Length Using Different Tools",
+  "experiment_version": "1.0",
+
+  "default_sampling_interval": 1.0,
+
+  "input_ranges": {
+    "object_length": {
+      "min": 0.1,
+      "max": 100.0,
+      "unit": "cm"
+    },
+    "least_count": {
+      "ruler": 0.1,
+      "vernier_caliper": 0.01,
+      "screw_gauge": 0.001
+    },
+    "zero_error": {
+      "min": -0.5,
+      "max": 0.5,
+      "unit": "cm"
+    },
+    "alignment_error": {
+      "min": 0.0,
+      "max": 0.2,
+      "unit": "cm"
+    },
+    "parallax_error": {
+      "min": 0.0,
+      "max": 0.2,
+      "unit": "cm"
+    },
+    "temperature": {
+      "min": 0,
+      "max": 60,
+      "unit": "celsius"
+    }
+  },
+
+  "constants": {
+    "reference_temperature": 20,
+    "thermal_expansion_coefficient": 0.000011,
+    "surface_roughness_factor": {
+      "smooth": 0.01,
+      "medium": 0.03,
+      "rough": 0.06
+    },
+    "user_precision_factor": {
+      "low": 0.08,
+      "medium": 0.04,
+      "high": 0.01
+    }
+  },
+
+  "noise_levels": {
+    "ruler": 0.05,
+    "vernier_caliper": 0.02,
+    "screw_gauge": 0.005
+  },
+
+  "visual": {
+    "tool_scale_marks": {
+      "ruler": 100,
+      "vernier_caliper": 50,
+      "screw_gauge": 100
+    },
+    "max_parallax_angle_deg": 10,
+    "error_highlight_threshold": 0.1,
+    "show_zero_error_indicator": true
+  }
+}
