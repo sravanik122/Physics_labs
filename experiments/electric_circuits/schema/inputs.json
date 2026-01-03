@@ -1,0 +1,96 @@
+{
+  "voltage": {
+    "type": "number",
+    "units": "V",
+    "min": 0,
+    "max": 240,
+    "default": 12,
+    "description": "Voltage supplied by the power source."
+  },
+
+  "wire_material": {
+    "type": "enum",
+    "units": "none",
+    "values": ["copper", "aluminum", "iron", "nichrome", "silver"],
+    "default": "copper",
+    "description": "Material of the conducting wire."
+  },
+
+  "wire_length": {
+    "type": "number",
+    "units": "m",
+    "min": 0.1,
+    "max": 100,
+    "default": 5,
+    "description": "Length of the conducting wire."
+  },
+
+  "wire_thickness": {
+    "type": "number",
+    "units": "mm²",
+    "min": 0.1,
+    "max": 10,
+    "default": 1,
+    "description": "Cross-sectional area of the wire."
+  },
+
+  "temperature": {
+    "type": "number",
+    "units": "°C",
+    "min": -10,
+    "max": 150,
+    "default": 25,
+    "description": "Temperature of the conductor affecting resistivity."
+  },
+
+  "switch_state": {
+    "type": "boolean",
+    "units": "none",
+    "default": true,
+    "description": "Switch state controlling current flow (ON/OFF)."
+  },
+
+  "power_source_type": {
+    "type": "enum",
+    "units": "none",
+    "values": ["dc", "ac"],
+    "default": "dc",
+    "description": "Type of power source used in the circuit."
+  },
+
+  "contact_resistance": {
+    "type": "number",
+    "units": "Ω",
+    "min": 0,
+    "max": 10,
+    "default": 0.5,
+    "description": "Additional resistance at wire joints and contacts."
+  },
+
+  "sampling_interval": {
+    "type": "number",
+    "units": "s",
+    "min": 0.01,
+    "max": 1,
+    "default": 0.1,
+    "description": "Time interval between successive measurements."
+  },
+
+  "observation_duration": {
+    "type": "number",
+    "units": "s",
+    "min": 1,
+    "max": 60,
+    "default": 10,
+    "description": "Total duration for observing circuit behavior."
+  },
+
+  "seed": {
+    "type": "number",
+    "units": "none",
+    "min": 0,
+    "max": 9999,
+    "default": 0,
+    "description": "Random seed for reproducibility of noise."
+  }
+}
