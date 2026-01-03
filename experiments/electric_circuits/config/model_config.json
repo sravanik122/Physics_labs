@@ -1,0 +1,29 @@
+{
+  "experiment_version": "1.0.0",
+
+  "epochs": 30,
+  "batch_size": 16,
+  "validation_split": 0.2,
+
+  "optimizer": {
+    "type": "adam",
+    "learning_rate": 0.001
+  },
+
+  "model_layers": [64, 48, 32],
+
+  "regularization": {
+    "l2": 0.0005,
+    "dropout": 0.1
+  },
+
+  "loss": "mse",
+  "metrics": ["mae"],
+
+  "prediction_targets": {
+    "dc_circuit": ["effective_resistance", "current", "power"],
+    "ac_circuit": ["effective_resistance", "rms_current", "rms_power"]
+  },
+
+  "tensorboard_logdir": "./logs/electric_circuits/model_training"
+}
