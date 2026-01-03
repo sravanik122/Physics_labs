@@ -1,0 +1,82 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 0.5,
+  "default_total_time": 60,
+  "noise_sigma": 0.02,
+
+  "default_input_ranges": {
+    "temperature_difference": { "min": 1, "max": 500 },
+    "surface_area": { "min": 0.01, "max": 10 },
+    "distance_from_source": { "min": 0.001, "max": 5 },
+    "airflow_speed": { "min": 0, "max": 10 },
+    "insulation_level": { "min": 0, "max": 1 }
+  },
+
+  "constants": {
+    "stefan_boltzmann_constant": 5.670374419e-8,
+
+    "material_conductivity": {
+      "copper": 401,
+      "aluminum": 237,
+      "iron": 80,
+      "steel": 50,
+      "glass": 1.1,
+      "wood": 0.12
+    },
+
+    "convection_coefficients": {
+      "air": {
+        "natural": 10,
+        "forced": 30
+      },
+      "water": {
+        "natural": 500,
+        "forced": 1000
+      }
+    },
+
+    "fluid_density": {
+      "air": 1.225,
+      "water": 1000
+    },
+
+    "emissivity": {
+      "black": 0.95,
+      "metal": 0.3,
+      "polished_metal": 0.1,
+      "painted": 0.85
+    },
+
+    "insulation_factor": {
+      "none": 1.0,
+      "low": 0.7,
+      "medium": 0.4,
+      "high": 0.15
+    }
+  },
+
+  "visual": {
+    "max_heat_particles": 500,
+    "heat_color_map": "thermal",
+
+    "conduction": {
+      "show_gradient": true,
+      "gradient_resolution": 50
+    },
+
+    "convection": {
+      "show_flow_arrows": true,
+      "max_arrow_count": 30
+    },
+
+    "radiation": {
+      "show_radiation_waves": true,
+      "wave_density": 20
+    },
+
+    "animation": {
+      "recommended_fps": 60
+    }
+  }
+}
