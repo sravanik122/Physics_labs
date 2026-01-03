@@ -1,0 +1,108 @@
+{
+  "angle_of_incidence": {
+    "type": "number",
+    "units": "degrees",
+    "min": 0,
+    "max": 90,
+    "default": 30,
+    "description": "Angle between the incident ray and the normal."
+  },
+
+  "object_distance": {
+    "type": "number",
+    "units": "m",
+    "min": 0.1,
+    "max": 10,
+    "default": 1,
+    "description": "Distance of the object from the mirror."
+  },
+
+  "light_intensity": {
+    "type": "number",
+    "units": "arbitrary",
+    "min": 0.1,
+    "max": 100,
+    "default": 10,
+    "description": "Intensity of the incident light."
+  },
+
+  "mirror_type": {
+    "type": "enum",
+    "units": "none",
+    "values": ["plane", "concave", "convex"],
+    "default": "plane",
+    "description": "Type of reflecting mirror."
+  },
+
+  "surface_smoothness": {
+    "type": "number",
+    "units": "none",
+    "min": 0,
+    "max": 1,
+    "default": 0.9,
+    "description": "Smoothness of the reflecting surface (1 = perfectly smooth)."
+  },
+
+  "object_size": {
+    "type": "number",
+    "units": "m",
+    "min": 0.01,
+    "max": 2,
+    "default": 0.2,
+    "description": "Size of the object casting a shadow."
+  },
+
+  "screen_distance": {
+    "type": "number",
+    "units": "m",
+    "min": 0.1,
+    "max": 10,
+    "default": 2,
+    "description": "Distance between the object and the screen."
+  },
+
+  "ambient_light": {
+    "type": "number",
+    "units": "none",
+    "min": 0,
+    "max": 1,
+    "default": 0.2,
+    "description": "Ambient light level affecting shadow visibility."
+  },
+
+  "wavelength": {
+    "type": "number",
+    "units": "nm",
+    "min": 380,
+    "max": 750,
+    "default": 550,
+    "description": "Wavelength of light affecting color of rays."
+  },
+
+  "sampling_interval": {
+    "type": "number",
+    "units": "s",
+    "min": 0.01,
+    "max": 1,
+    "default": 0.1,
+    "description": "Time interval between successive measurements."
+  },
+
+  "observation_duration": {
+    "type": "number",
+    "units": "s",
+    "min": 1,
+    "max": 10,
+    "default": 5,
+    "description": "Total duration of the observation."
+  },
+
+  "seed": {
+    "type": "number",
+    "units": "none",
+    "min": 0,
+    "max": 9999,
+    "default": 0,
+    "description": "Random seed for reproducibility."
+  }
+}
