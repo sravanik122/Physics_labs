@@ -1,0 +1,32 @@
+{
+  "experiment_version": "1.0.0",
+
+  "epochs": 25,
+  "batch_size": 16,
+  "validation_split": 0.2,
+
+  "optimizer": {
+    "type": "adam",
+    "learning_rate": 0.001
+  },
+
+  "model_layers": [64, 48, 32],
+
+  "regularization": {
+    "l2": 0.0005,
+    "dropout": 0.1
+  },
+
+  "loss": "mse",
+  "metrics": ["mae"],
+
+  "prediction_targets": {
+    "optics": [
+      "effective_reflection_coefficient",
+      "shadow_size_factor",
+      "shadow_blur_factor"
+    ]
+  },
+
+  "tensorboard_logdir": "./logs/reflection_shadow/model_training"
+}
