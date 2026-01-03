@@ -1,0 +1,42 @@
+{
+  "final_state": {
+    "final_temperature": "number (°C)",
+    "total_heat_transfer": "number (J)",
+    "conduction_heat": "number (J)",
+    "convection_heat": "number (J)",
+    "radiation_heat": "number (J)"
+  },
+
+  "timeline": {
+    "t": "number[] (s)",
+    "temperature": "number[] (°C)",
+    "heat_transfer_rate": "number[] (W)",
+    "conduction_rate": "number[] (W)",
+    "convection_rate": "number[] (W)",
+    "radiation_rate": "number[] (W)"
+  },
+
+  "visual": {
+    "conduction": {
+      "heat_gradient_intensity": "number",
+      "color_map": "thermal"
+    },
+
+    "convection": {
+      "flow_strength": "number",
+      "arrow_density": "number"
+    },
+
+    "radiation": {
+      "wave_intensity": "number",
+      "wave_count": "number"
+    },
+
+    "animation": {
+      "show_conduction": "boolean",
+      "show_convection": "boolean",
+      "show_radiation": "boolean",
+      "recommended_fps": "number"
+    }
+  }
+}
