@@ -1,0 +1,97 @@
+{
+  "temperature_difference": {
+    "type": "number",
+    "units": "°C",
+    "min": 1,
+    "max": 500,
+    "default": 50,
+    "description": "Temperature difference between hot and cold regions."
+  },
+
+  "material_type": {
+    "type": "enum",
+    "units": "none",
+    "values": ["copper", "aluminum", "iron", "steel", "glass", "wood"],
+    "default": "steel",
+    "description": "Material through which heat is transferred by conduction."
+  },
+
+  "surface_area": {
+    "type": "number",
+    "units": "m²",
+    "min": 0.01,
+    "max": 10,
+    "default": 1,
+    "description": "Surface area available for heat transfer."
+  },
+
+  "distance_from_source": {
+    "type": "number",
+    "units": "m",
+    "min": 0.001,
+    "max": 5,
+    "default": 0.1,
+    "description": "Distance between heat source and receiving surface."
+  },
+
+  "medium_type": {
+    "type": "enum",
+    "units": "none",
+    "values": ["air", "water"],
+    "default": "air",
+    "description": "Surrounding medium affecting convection."
+  },
+
+  "airflow_speed": {
+    "type": "number",
+    "units": "m/s",
+    "min": 0,
+    "max": 10,
+    "default": 1,
+    "description": "Speed of fluid or air flow affecting convection."
+  },
+
+  "emissivity": {
+    "type": "number",
+    "units": "none",
+    "min": 0,
+    "max": 1,
+    "default": 0.8,
+    "description": "Emissivity of the surface for radiation heat transfer."
+  },
+
+  "insulation_level": {
+    "type": "enum",
+    "units": "none",
+    "values": ["none", "low", "medium", "high"],
+    "default": "medium",
+    "description": "Level of insulation reducing heat loss."
+  },
+
+  "sampling_interval": {
+    "type": "number",
+    "units": "s",
+    "min": 0.1,
+    "max": 5,
+    "default": 0.5,
+    "description": "Time interval between successive measurements."
+  },
+
+  "observation_duration": {
+    "type": "number",
+    "units": "s",
+    "min": 10,
+    "max": 300,
+    "default": 60,
+    "description": "Total duration of heat transfer observation."
+  },
+
+  "seed": {
+    "type": "number",
+    "units": "none",
+    "min": 0,
+    "max": 9999,
+    "default": 0,
+    "description": "Random seed for reproducibility."
+  }
+}
