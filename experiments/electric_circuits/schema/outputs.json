@@ -1,0 +1,46 @@
+{
+  "final_state": {
+    "current": "number (A)",
+    "voltage": "number (V)",
+    "total_resistance": "number (Ω)",
+    "power": "number (W)",
+    "switch_state": "boolean",
+    "power_source_type": "string"
+  },
+
+  "timeline": {
+    "t": "number[] (s)",
+    "current": "number[] (A)",
+    "voltage": "number[] (V)",
+    "resistance": "number[] (Ω)",
+    "power": "number[] (W)",
+    "temperature": "number[] (°C)"
+  },
+
+  "visual": {
+    "current_flow": {
+      "enabled": "boolean",
+      "flow_intensity": "number"
+    },
+
+    "bulb": {
+      "glow_intensity": "number"
+    },
+
+    "wire_heating": {
+      "temperature_level": "number",
+      "color_map": "thermal"
+    },
+
+    "circuit_state": {
+      "switch": "on | off"
+    },
+
+    "animation": {
+      "show_current_flow": "boolean",
+      "show_bulb_glow": "boolean",
+      "show_wire_heating": "boolean",
+      "recommended_fps": "number"
+    }
+  }
+}
