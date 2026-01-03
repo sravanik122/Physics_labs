@@ -1,0 +1,50 @@
+{
+  "final_state": {
+    "angle_of_reflection": "number (degrees)",
+    "image_distance": "number (m)",
+    "shadow_size": "number (m)",
+    "shadow_intensity": "number",
+    "reflected_intensity": "number"
+  },
+
+  "timeline": {
+    "t": "number[] (s)",
+    "angle_of_incidence": "number[] (degrees)",
+    "angle_of_reflection": "number[] (degrees)",
+    "reflected_intensity": "number[]",
+    "shadow_size": "number[] (m)",
+    "shadow_intensity": "number[]"
+  },
+
+  "visual": {
+    "rays": {
+      "incident_angle": "number",
+      "reflected_angle": "number",
+      "ray_count": "number",
+      "scattering_factor": "number"
+    },
+
+    "shadow": {
+      "size": "number",
+      "blur_radius": "number",
+      "opacity": "number"
+    },
+
+    "mirror": {
+      "type": "plane | concave | convex"
+    },
+
+    "light": {
+      "wavelength": "number (nm)",
+      "color_hint": "string"
+    },
+
+    "animation": {
+      "show_incident_ray": "boolean",
+      "show_reflected_ray": "boolean",
+      "show_normal": "boolean",
+      "show_shadow": "boolean",
+      "recommended_fps": "number"
+    }
+  }
+}
