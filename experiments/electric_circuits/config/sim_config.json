@@ -1,0 +1,58 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 0.1,
+  "default_total_time": 10,
+  "noise_sigma": 0.01,
+
+  "default_input_ranges": {
+    "voltage": { "min": 0, "max": 240 },
+    "wire_length": { "min": 0.1, "max": 100 },
+    "wire_thickness": { "min": 0.1, "max": 10 },
+    "temperature": { "min": -10, "max": 150 },
+    "contact_resistance": { "min": 0, "max": 10 }
+  },
+
+  "constants": {
+    "reference_temperature": 20,
+
+    "material_resistivity": {
+      "copper": 1.68e-8,
+      "aluminum": 2.82e-8,
+      "iron": 9.71e-8,
+      "nichrome": 1.10e-6,
+      "silver": 1.59e-8
+    },
+
+    "temperature_coefficient": {
+      "copper": 0.0039,
+      "aluminum": 0.0043,
+      "iron": 0.0050,
+      "nichrome": 0.0004,
+      "silver": 0.0038
+    },
+
+    "power_source_types": {
+      "dc": {
+        "stability_factor": 1.0
+      },
+      "ac": {
+        "stability_factor": 0.95,
+        "frequency_hz": 50
+      }
+    }
+  },
+
+  "visual": {
+    "max_current_flow_lines": 40,
+    "wire_heat_color_map": "thermal",
+    "bulb_glow_max_intensity": 100,
+
+    "animation": {
+      "show_current_flow": true,
+      "show_switch_state": true,
+      "show_wire_heating": true,
+      "recommended_fps": 60
+    }
+  }
+}
