@@ -1,0 +1,24 @@
+{
+  "final_state": {
+    "friction_force": "number",
+    "coefficient_of_friction": "number",
+    "heat_generated": "number",
+    "energy_loss": "number"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "friction_force": "number[]",
+    "coefficient_of_friction": "number[]",
+    "heat_generated": "number[]",
+    "relative_motion": "number[]"
+  },
+
+  "visual": {
+    "show_friction_arrows": "boolean",
+    "show_heat_map": "boolean",
+    "show_surface_texture_change": "boolean",
+    "arrow_scale": "number",
+    "heat_intensity": "number"
+  }
+}
