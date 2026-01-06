@@ -1,0 +1,24 @@
+{
+  "final_state": {
+    "pressure": "number",
+    "normal_force": "number",
+    "stress": "number",
+    "deformation_depth": "number"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "applied_force": "number[]",
+    "normal_force": "number[]",
+    "pressure": "number[]",
+    "deformation_depth": "number[]"
+  },
+
+  "visual": {
+    "show_force_arrows": "boolean",
+    "show_pressure_heatmap": "boolean",
+    "show_surface_deformation": "boolean",
+    "max_arrow_length": "number",
+    "pressure_color_map": "string"
+  }
+}
