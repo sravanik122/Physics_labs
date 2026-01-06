@@ -1,0 +1,112 @@
+{
+  "surface_roughness": {
+    "type": "number",
+    "units": "dimensionless",
+    "min": 0.1,
+    "max": 1.0,
+    "default": 0.5,
+    "description": "Roughness of the contacting surfaces."
+  },
+
+  "normal_force": {
+    "type": "number",
+    "units": "N",
+    "min": 1,
+    "max": 500,
+    "default": 50,
+    "description": "Normal force acting between the two surfaces."
+  },
+
+  "material_pair": {
+    "type": "enum",
+    "units": "",
+    "values": ["rubber-steel", "wood-wood", "steel-steel", "plastic-steel"],
+    "default": "rubber-steel",
+    "description": "Pair of materials in contact."
+  },
+
+  "lubrication_level": {
+    "type": "enum",
+    "units": "",
+    "values": ["none", "low", "high"],
+    "default": "none",
+    "description": "Level of lubrication between the surfaces."
+  },
+
+  "speed_of_motion": {
+    "type": "number",
+    "units": "m/s",
+    "min": 0,
+    "max": 5,
+    "default": 1,
+    "description": "Relative sliding speed between the surfaces."
+  },
+
+  "temperature": {
+    "type": "number",
+    "units": "°C",
+    "min": -10,
+    "max": 100,
+    "default": 25,
+    "description": "Temperature at the contact surface."
+  },
+
+  "contact_area": {
+    "type": "number",
+    "units": "m²",
+    "min": 0.0001,
+    "max": 0.1,
+    "default": 0.01,
+    "description": "Area of contact between the two surfaces."
+  },
+
+  "wear_factor": {
+    "type": "enum",
+    "units": "",
+    "values": ["low", "medium", "high"],
+    "default": "medium",
+    "description": "Wear tendency of the materials."
+  },
+
+  "time": {
+    "type": "number",
+    "units": "s",
+    "min": 1,
+    "max": 60,
+    "default": 10,
+    "description": "Duration of motion."
+  },
+
+  "environmental_conditions": {
+    "type": "enum",
+    "units": "",
+    "values": ["dry", "humid", "wet", "dusty"],
+    "default": "dry",
+    "description": "Environmental conditions affecting friction."
+  },
+
+  "motion_type": {
+    "type": "enum",
+    "units": "",
+    "values": ["static", "kinetic"],
+    "default": "kinetic",
+    "description": "Type of friction based on motion."
+  },
+
+  "surface_contamination": {
+    "type": "enum",
+    "units": "",
+    "values": ["clean", "dusty", "oily"],
+    "default": "clean",
+    "description": "Contamination present on the contact surfaces."
+  },
+
+  "sampling_interval": {
+    "type": "number",
+    "units": "s",
+    "min": 0.05,
+    "max": 1.0,
+    "default": 0.1,
+    "description": "Time interval between simulation samples."
+  }
+}
