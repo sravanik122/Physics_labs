@@ -1,0 +1,43 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 0.001,
+  "default_total_time": 2.0,
+  "noise_sigma": 0.01,
+
+  "constants": {
+    "speed_of_sound": {
+      "air": 343,
+      "water": 1480,
+      "solid": 5000
+    },
+
+    "reference_intensity": 0.000000000001,
+
+    "medium_density": {
+      "air": 1.225,
+      "water": 1000,
+      "solid": 2500
+    },
+
+    "resonance_amplification_factor": 2.0,
+
+    "damping_limits": {
+      "min": 0.01,
+      "max": 0.5
+    },
+
+    "tension_effect_factor": 0.5,
+
+    "pressure_reference": 101325
+  },
+
+  "visual": {
+    "show_wavefronts": true,
+    "max_wave_rings": 40,
+    "wave_opacity_decay": true,
+    "wave_color_map": "cool_to_warm",
+    "show_source_vibration": true,
+    "show_resonance_highlight": true
+  }
+}
