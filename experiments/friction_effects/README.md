@@ -34,9 +34,8 @@
 
 ---
 
-## Visualization Guidance (Frontend)
+## Frontend Visualization
 
 The frontend should visualize friction using arrows opposite to the direction of motion, where arrow thickness represents the magnitude of the friction force.  
 Surface appearance can be modified to reflect roughness, lubrication, and contamination, while heat generation may be shown using a color glow that intensifies as friction increases.
-
 Additionally, synchronized graphs of friction force and heat generation versus time can be displayed alongside the animation to help students understand how friction evolves under different conditions.
