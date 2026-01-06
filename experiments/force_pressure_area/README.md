@@ -35,7 +35,7 @@
 
 ---
 
-## Visualization Guidance (Frontend)
+## Frontend Visualization 
 
 The frontend should visualize the applied force using arrows, where arrow length represents force magnitude and arrow orientation represents the angle of application.  
 Pressure should be displayed as a color heatmap on the contact surface, transitioning from cooler colors (low pressure) to warmer colors (high pressure) to clearly show pressure distribution.
