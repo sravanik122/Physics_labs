@@ -1,0 +1,113 @@
+{
+  "applied_force": {
+    "type": "number",
+    "units": "N",
+    "min": 0,
+    "max": 1000,
+    "default": 100,
+    "description": "Force applied on the surface."
+  },
+
+  "contact_area": {
+    "type": "number",
+    "units": "m²",
+    "min": 0.0001,
+    "max": 1.0,
+    "default": 0.01,
+    "description": "Area over which the force is applied."
+  },
+
+  "object_mass": {
+    "type": "number",
+    "units": "kg",
+    "min": 0.1,
+    "max": 100,
+    "default": 10,
+    "description": "Mass of the object applying the force."
+  },
+
+  "surface_type": {
+    "type": "enum",
+    "units": "",
+    "options": ["soft", "hard", "elastic"],
+    "default": "hard",
+    "description": "Type of surface on which force is applied."
+  },
+
+  "gravity": {
+    "type": "number",
+    "units": "m/s²",
+    "min": 1,
+    "max": 20,
+    "default": 9.81,
+    "description": "Gravitational acceleration affecting normal force."
+  },
+
+  "deformation": {
+    "type": "number",
+    "units": "m",
+    "min": 0,
+    "max": 0.1,
+    "default": 0.0,
+    "description": "Initial surface deformation due to applied force."
+  },
+
+  "material_hardness": {
+    "type": "enum",
+    "units": "",
+    "options": ["low", "medium", "high"],
+    "default": "medium",
+    "description": "Hardness level of the contact material."
+  },
+
+  "pressure_distribution": {
+    "type": "enum",
+    "units": "",
+    "options": ["uniform", "non_uniform"],
+    "default": "uniform",
+    "description": "Distribution pattern of pressure across the surface."
+  },
+
+  "duration": {
+    "type": "number",
+    "units": "s",
+    "min": 0.1,
+    "max": 60,
+    "default": 5,
+    "description": "Duration for which the force is applied."
+  },
+
+  "external_resistance": {
+    "type": "enum",
+    "units": "",
+    "options": ["low", "medium", "high"],
+    "default": "medium",
+    "description": "Resistance opposing applied force."
+  },
+
+  "contact_shape": {
+    "type": "enum",
+    "units": "",
+    "options": ["flat", "circular", "edge", "pointed"],
+    "default": "flat",
+    "description": "Shape of the contact area affecting pressure concentration."
+  },
+
+  "surface_roughness": {
+    "type": "number",
+    "units": "",
+    "min": 0,
+    "max": 1,
+    "default": 0.3,
+    "description": "Roughness of the surface affecting pressure distribution."
+  },
+
+  "force_application_angle": {
+    "type": "number",
+    "units": "degrees",
+    "min": 0,
+    "max": 90,
+    "default": 0,
+    "description": "Angle at which force is applied relative to the surface normal."
+  }
+}
