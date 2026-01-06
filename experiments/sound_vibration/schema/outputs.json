@@ -1,0 +1,24 @@
+{
+  "final_state": {
+    "sound_intensity": "number",
+    "loudness_level": "number",
+    "wavelength": "number",
+    "energy_decay": "number"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "displacement": "number[]",
+    "sound_intensity": "number[]",
+    "loudness_level": "number[]",
+    "wave_amplitude": "number[]"
+  },
+
+  "visual": {
+    "show_wavefronts": "boolean",
+    "show_source_vibration": "boolean",
+    "show_resonance_highlight": "boolean",
+    "max_wave_rings": "number",
+    "wave_opacity_decay": "boolean"
+  }
+}
