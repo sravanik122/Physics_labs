@@ -1,0 +1,114 @@
+{
+  "frequency": {
+    "type": "number",
+    "units": "Hz",
+    "min": 20,
+    "max": 2000,
+    "default": 440,
+    "description": "Frequency of vibration determining the pitch of sound."
+  },
+
+  "amplitude": {
+    "type": "number",
+    "units": "arbitrary",
+    "min": 0.01,
+    "max": 1.0,
+    "default": 0.5,
+    "description": "Amplitude of vibration determining the loudness of sound."
+  },
+
+  "medium_type": {
+    "type": "enum",
+    "units": "",
+    "values": ["air", "water", "solid"],
+    "default": "air",
+    "description": "Medium through which sound propagates."
+  },
+
+  "tension": {
+    "type": "number",
+    "units": "N",
+    "min": 1,
+    "max": 500,
+    "default": 50,
+    "description": "Tension in the vibrating body such as a string."
+  },
+
+  "length_of_vibrating_body": {
+    "type": "number",
+    "units": "m",
+    "min": 0.1,
+    "max": 2.0,
+    "default": 0.65,
+    "description": "Length of the vibrating body affecting frequency."
+  },
+
+  "density": {
+    "type": "number",
+    "units": "kg/m³",
+    "min": 0.5,
+    "max": 3000,
+    "default": 1.225,
+    "description": "Density of the medium through which sound travels."
+  },
+
+  "distance_from_source": {
+    "type": "number",
+    "units": "m",
+    "min": 0.1,
+    "max": 50,
+    "default": 5,
+    "description": "Distance between sound source and observer."
+  },
+
+  "air_pressure": {
+    "type": "number",
+    "units": "Pa",
+    "min": 80000,
+    "max": 120000,
+    "default": 101325,
+    "description": "Air pressure of the medium affecting sound propagation."
+  },
+
+  "damping": {
+    "type": "number",
+    "units": "dimensionless",
+    "min": 0.01,
+    "max": 0.5,
+    "default": 0.05,
+    "description": "Damping factor representing energy loss of sound."
+  },
+
+  "resonance": {
+    "type": "boolean",
+    "units": "",
+    "default": false,
+    "description": "Whether resonance condition is present."
+  },
+
+  "source_type": {
+    "type": "enum",
+    "units": "",
+    "values": ["string", "membrane", "tuning_fork"],
+    "default": "string",
+    "description": "Type of vibrating sound source."
+  },
+
+  "observation_time": {
+    "type": "number",
+    "units": "s",
+    "min": 0.5,
+    "max": 5.0,
+    "default": 2.0,
+    "description": "Duration for which sound is observed."
+  },
+
+  "sampling_interval": {
+    "type": "number",
+    "units": "s",
+    "min": 0.0005,
+    "max": 0.01,
+    "default": 0.001,
+    "description": "Time interval between simulation samples."
+  }
+}
