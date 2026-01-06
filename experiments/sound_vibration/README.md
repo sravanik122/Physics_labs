@@ -34,7 +34,7 @@
 
 ---
 
-## Visualization Guidance (Frontend)
+## Frontend Visualization
 
 The frontend should animate the vibrating sound source and display sound waves as expanding circular wavefronts.  
 Wave spacing represents pitch (frequency), while wave height or brightness represents loudness (amplitude). Sound waves should fade with distance and damping, and resonance can be highlighted through amplified vibrations.
