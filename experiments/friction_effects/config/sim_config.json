@@ -1,0 +1,62 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 0.1,
+  "default_total_time": 20,
+  "noise_sigma": 0.015,
+
+  "constants": {
+    "gravity": 9.81,
+
+    "base_friction_coefficients": {
+      "rubber-steel": { "static": 0.8, "kinetic": 0.6 },
+      "wood-wood": { "static": 0.5, "kinetic": 0.3 },
+      "steel-steel": { "static": 0.6, "kinetic": 0.4 },
+      "plastic-steel": { "static": 0.4, "kinetic": 0.25 }
+    },
+
+    "lubrication_factor": {
+      "none": 1.0,
+      "low": 0.7,
+      "high": 0.4
+    },
+
+    "surface_contamination_factor": {
+      "clean": 1.0,
+      "dusty": 1.2,
+      "oily": 0.6
+    },
+
+    "surface_roughness_factor": {
+      "min": 0.5,
+      "max": 1.5
+    },
+
+    "temperature_effect": {
+      "reference_temperature": 25,
+      "friction_change_per_degree": -0.002
+    },
+
+    "wear_factor": {
+      "low": 0.95,
+      "medium": 1.0,
+      "high": 1.1
+    },
+
+    "environment_factor": {
+      "dry": 1.0,
+      "humid": 1.1,
+      "wet": 0.85,
+      "dusty": 1.15
+    }
+  },
+
+  "visual": {
+    "show_friction_arrows": true,
+    "arrow_scale": 1.0,
+    "show_surface_texture": true,
+    "heat_color_map": "cool_to_hot",
+    "max_heat_intensity": 100,
+    "show_motion_direction": true
+  }
+}
