@@ -1,0 +1,21 @@
+{
+  "epochs": 40,
+  "batch_size": 16,
+  "learning_rate": 0.005,
+  "validation_split": 0.2,
+
+  "optimizer": "adam",
+
+  "model_layers": [
+    64,
+    48,
+    32
+  ],
+
+  "loss": "mse",
+  "metrics": [
+    "mae"
+  ],
+
+  "tensorboard_logdir": "./logs/sound_model_training"
+}
